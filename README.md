@@ -35,3 +35,16 @@ ln -s </path/to/LoveDA> ./LoveDA
 
 # Acknowledgments
 This code is heavily borrowed from [LoveDA](https://github.com/Junjue-Wang/LoveDA).
+
+# Citation
+If you find this repo useful for your research, please consider citing the paper as follows:
+```
+@article{liu2022weakly,
+  title={Weakly supervised high spatial resolution land cover mapping based on self-training with weighted pseudo-labels},
+  author={Liu, Wei and Liu, Jiawei and Luo, Zhipeng and Zhang, Hongbin and Gao, Kyle and Li, Jonathan},
+  journal={Int. J. Appl. Earth Obs. Geoinf.},
+  volume={112},
+  pages={102931},
+  year={2022}
+}
+```
