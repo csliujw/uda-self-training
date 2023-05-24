@@ -33,7 +33,7 @@ palette = np.asarray(list(COLOR_MAP.values())).reshape((-1,)).tolist()
 def weighted_loss(labels, pred1, pred2):
     criterion = torch.nn.CrossEntropyLoss(ignore_index=-1, reduction='none')
     kl_distance = torch.nn.KLDivLoss(reduction='none')
-    loss = criterion(pred1, labels.long())
+    loss = criterion(pred1, labels.long()) + criterion(pred2, labels.long())*0.5
     sm = torch.nn.Softmax(dim=1)
     log_sm = torch.nn.LogSoftmax(dim=1)
 
